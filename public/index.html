@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b12">
+<title>TopFilm.uz — Kino olamiga xush kelibsiz</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="brand-mark">▶</span> TOPFILM<span class="dot">.UZ</span></a>
+  <nav><a href="#home">Bosh sahifa</a><a href="#catalog">Kinolar</a><a href="#genres">Janrlar</a></nav>
+  <button class="admin-open" id="adminOpen">Admin</button>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy"><span class="eyebrow">KINO OLAMIGA XUSH KELIBSIZ</span>
+  <h1>Sevimli kinolaringiz<br><em>bir joyda.</em></h1>
+  <p>O‘zbekcha, ruscha va boshqa tillardagi filmlar katalogi.</p>
+  <a class="primary" href="#catalog">Kinolarni ko‘rish <b>→</b></a></div>
+  <div class="hero-art"><div class="orb"></div><div class="film-card"><span>TOP<br>FILM</span><small>YOUR NEXT MOVIE</small></div></div>
+</section>
+<section class="toolbar" id="catalog">
+  <div><span class="eyebrow">KATALOG</span><h2>Ommabop kinolar</h2></div>
+  <div class="filters"><input id="search" placeholder="Kino nomini qidiring..." aria-label="Qidirish"><select id="genre"><option value="">Barcha janrlar</option></select></div>
+</section>
+<div id="status" class="status">Kinolar yuklanmoqda...</div>
+<section id="movies" class="movies"></section>
+<section id="genres" class="genre-note"><span class="eyebrow">TOPFILM.UZ</span><h2>Har kayfiyatga mos kino</h2><p>Admin paneldan katalogga yangi filmlar qo‘shishingiz mumkin.</p></section>
+</main>
+<footer>© <span id="yearNow"></span> TopFilm.uz <span>Kontent huquqlariga rioya qiling.</span></footer>
+
+<div class="modal" id="movieModal"><div class="modal-box wide"><button class="x" data-close="movieModal">×</button><div id="movieDetail"></div></div></div>
+<div class="modal" id="adminModal"><div class="modal-box"><button class="x" data-close="adminModal">×</button><div id="loginView"><span class="eyebrow">BOSHQARUV</span><h2>Admin panel</h2><label>Login<input id="loginUser" value="admin"></label><label>Parol<input id="loginPass" type="password" placeholder="Admin paroli"></label><button class="primary full" id="loginBtn">Kirish</button><p class="error" id="loginError"></p></div>
+<div id="adminView" hidden><span class="eyebrow">KATALOG BOSHQARUVI</span><h2>Kino qo‘shish</h2>
+<form id="movieForm">
+<label>Kino nomi *<input name="title" required></label>
+<div class="two"><label>Asl nomi<input name="original_title"></label><label>Yili<input name="year" type="number" min="1888" max="2100"></label></div>
+<div class="two"><label>Janr<input name="genre" placeholder="Drama"></label><label>Til<input name="language" value="O‘zbekcha"></label></div>
+<label>Tavsif<textarea name="description" rows="3"></textarea></label>
+<label>Poster rasmi URL<input name="poster" type="url" placeholder="https://..."></label>
+<label>Video URL<input name="video_url" type="url" placeholder="https://..."></label>
+<label>Treyler URL<input name="trailer_url" type="url" placeholder="https://..."></label>
+<label class="check"><input name="featured" type="checkbox"> Bosh sahifada ajratib ko‘rsatish</label>
+<button class="primary full" type="submit">Kino saqlash</button><p id="adminMessage" class="error"></p>
+</form><h3>Mavjud kinolar</h3><div id="adminList"></div><button class="secondary full" id="logoutBtn">Chiqish</button>
+</div></div></div>
+<script src="/app.js"></script>
+</body></html>

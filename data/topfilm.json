@@ -1,0 +1,26 @@
+{
+  "nextId": 5,
+  "admins": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password_hash": "$2a$12$4kDEmSTCF/GlmEtEhn0jouf3.uQaz0UTLS3vm0y81s8GutNVbUIq2"
+    }
+  ],
+  "movies": [
+    {
+      "title": "Interstellar",
+      "original_title": "Interstellar",
+      "genre": "Fantastika",
+      "language": "O‘zbekcha",
+      "description": "Insoniyat kelajagini saqlab qolish uchun kosmosga yo‘l olgan tadqiqotchilar haqida film.",
+      "poster": "https://www.google.com/search?q=interstellar+2014+poster&oq=interstellar+2014+p&gs_lcrp=EgZjaHJvbWUqCQgBEAAYExiABDIGCAAQRRg5MgkIARAAGBMYgAQyCggCEAAYExgWGB4yCggDEAAYExgWGB4yCggEEAAYExgWGB4yCggFEAAYExgWGB4yCggGEAAYExgWGB4yCggHEAAYExgWGB4yCggIEAAYExgWGB4yCggJEAAYExgWGB7SAQkxMjU5N2owajeoAhSwAgHxBQ5bWSxIyIoO8QUOW1ksSMiKDg&client=ms-android-oppo-rvo3&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#sv=CAMScRoyKhBlLWRZck5WcDRYOU9yVElNMg5kWXJOVnA0WDlPclRJTToOTmZKUndhUTJNQzd4S00gBCoxChtfS21vR2E1V3BOb2lTeGM4UG5ZV0h1QXdfNDQSEGUtZFlyTlZwNFg5T3JUSU0YADABSgQIARACGAcgi8edlwxKCBACGAEgAigB",
+      "video_url": "",
+      "trailer_url": "",
+      "year": 2014,
+      "featured": 1,
+      "id": 4,
+      "created_at": "2026-11-25T04:58:43.586Z"
+    }
+  ]
+}
